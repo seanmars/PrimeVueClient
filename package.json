@@ -1,0 +1,38 @@
+{
+  "name": "vue-client",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "run-p type-check \"build-only {@}\" --",
+    "preview": "vite preview",
+    "build-only": "vite build",
+    "type-check": "vue-tsc --build --force"
+  },
+  "dependencies": {
+    "@primevue/themes": "^4.2.5",
+    "chart.js": "^4.4.7",
+    "pinia": "^3.0.1",
+    "primeicons": "^7.0.0",
+    "primevue": "^4.2.5",
+    "vue": "^3.5.13",
+    "vue-router": "4"
+  },
+  "devDependencies": {
+    "@primevue/auto-import-resolver": "^4.2.5",
+    "@tsconfig/node22": "^22.0.0",
+    "@types/node": "^22.13.4",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vue/tsconfig": "^0.7.0",
+    "tailwindcss": "^4.0.6",
+    "tailwindcss-primeui": "^0.4.0",
+    "typescript": "~5.7.2",
+    "unplugin-auto-import": "^19.1.0",
+    "unplugin-vue-components": "^28.0.0",
+    "unplugin-vue-router": "^0.11.2",
+    "vite": "^6.1.0",
+    "vite-plugin-vue-layouts": "^0.11.0",
+    "vue-tsc": "^2.2.0"
+  }
+}

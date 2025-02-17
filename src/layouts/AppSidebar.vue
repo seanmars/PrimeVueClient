@@ -1,11 +1,13 @@
-﻿<script setup lang="ts">
-
+﻿<script setup>
+import AppMenu from '@/layouts/AppMenu.vue';
 </script>
 
 <template>
-  <div>sidebar</div>
+  <div class="layout-sidebar">
+    <app-menu />
+  </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 
 </style>

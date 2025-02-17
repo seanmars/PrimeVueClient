@@ -18,7 +18,10 @@ export function registerPlugins(app: App) {
   app
     .use(PrimeVue, {
       theme: {
-        preset: Aura
+        preset: Aura,
+        options: {
+          darkModeSelector: '.app-dark'
+        }
       }
     })
     .use(router)

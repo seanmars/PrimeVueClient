@@ -1,13 +1,8 @@
-import './style.css';
-
-// Plugins
-
-// Components
 import App from './App.vue';
-
-// Composables
 import { createApp } from 'vue';
 import { registerPlugins } from '@/plugins';
+
+import '@/assets/styless.scss';
 
 const app = createApp(App);
 

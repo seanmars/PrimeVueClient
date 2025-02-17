@@ -8,7 +8,17 @@ const layoutConfig = reactive({
   menuMode: 'static'
 });
 
-const layoutState = reactive({
+export interface LayoutState {
+  staticMenuDesktopInactive: boolean;
+  overlayMenuActive: boolean;
+  profileSidebarVisible: boolean;
+  configSidebarVisible: boolean;
+  staticMenuMobileActive: boolean;
+  menuHoverActive: boolean;
+  activeMenuItem: string | null;
+}
+
+const layoutState = reactive<LayoutState>({
   staticMenuDesktopInactive: false,
   overlayMenuActive: false,
   profileSidebarVisible: false,

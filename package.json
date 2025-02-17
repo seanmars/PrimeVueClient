@@ -25,6 +25,10 @@
     "@types/node": "^22.13.4",
     "@vitejs/plugin-vue": "^5.2.1",
     "@vue/tsconfig": "^0.7.0",
+    "autoprefixer": "^10.4.20",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.5.2",
+    "sass": "^1.85.0",
     "tailwindcss": "^4.0.6",
     "tailwindcss-primeui": "^0.4.0",
     "typescript": "~5.7.2",
@@ -34,5 +38,6 @@
     "vite": "^6.1.0",
     "vite-plugin-vue-layouts": "^0.11.0",
     "vue-tsc": "^2.2.0"
-  }
+  },
+  "packageManager": "pnpm@10.2.1+sha512.398035c7bd696d0ba0b10a688ed558285329d27ea994804a52bad9167d8e3a72bcb993f9699585d3ca25779ac64949ef422757a6c31102c12ab932e5cbe5cc92"
 }

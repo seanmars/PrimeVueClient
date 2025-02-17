@@ -1,19 +1,19 @@
 <template>
   <div class="layout-wrapper" :class="containerClass">
-    <app-topbar></app-topbar>
-    <app-sidebar></app-sidebar>
+    <app-topbar />
+    <app-sidebar />
     <div class="layout-main-container">
       <div class="layout-main">
-        <router-view></router-view>
+        <router-view />
       </div>
-      <app-footer></app-footer>
+      <app-footer />
     </div>
-    <div class="layout-mask animate-fadein"></div>
+    <div class="layout-mask animate-fadein" />
   </div>
   <Toast />
 </template>
 
-<script lang="ts" setup>
+<script setup lang="ts">
 import { ref, computed, watch } from 'vue';
 import { useLayout } from '@/layouts/composables/layout';
 import AppTopbar from '@/layouts/AppTopbar.vue';

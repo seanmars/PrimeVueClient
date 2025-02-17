@@ -5,17 +5,19 @@
  */
 
 // Composables
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHistory, type RouteRecordRaw } from 'vue-router';
 import { setupLayouts } from 'virtual:generated-layouts';
 
 // Routes
 import routeSet from './routeSet';
 
 // Setup routes
-const routes = routeSet.map((route) => ({
-  path: route.to,
-  component: () => import(`../pages/${route.component}.vue`),
-}));
+const routes: RouteRecordRaw[] = [
+  {
+    path: '/',
+    component: import('@/pages/index.vue'),
+  }
+];
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),

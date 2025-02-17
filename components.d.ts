@@ -7,13 +7,11 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
-    AppFooter: typeof import('./src/components/AppFooter.vue')['default']
-    FishDataList: typeof import('./src/components/FishDataList.vue')['default']
-    FishWeightHistory: typeof import('./src/components/FishWeightHistory.vue')['default']
-    HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
-    NavigationItems: typeof import('./src/components/NavigationItems.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     Toast: typeof import('primevue/toast')['default']
+  }
+  export interface ComponentCustomProperties {
+    StyleClass: typeof import('primevue/styleclass')['default']
   }
 }

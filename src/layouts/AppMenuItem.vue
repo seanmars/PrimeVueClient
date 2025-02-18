@@ -1,8 +1,8 @@
 <script setup lang="ts">
+import type { ItemLink } from '@/types/ItemLink.ts';
 import { useLayout } from '@/layouts/composables/layout';
 import { onBeforeMount, ref, watch } from 'vue';
 import { useRoute } from 'vue-router';
-import type { ItemLink } from '@/router/routeSet';
 
 const route = useRoute();
 

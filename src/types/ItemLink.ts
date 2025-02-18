@@ -1,4 +1,4 @@
-﻿export interface ItemLink {
+export interface ItemLink {
   label: string;
   icon?: string;
   to?: string;
@@ -12,14 +12,3 @@
   command?: (event: { originalEvent: Event; item: ItemLink }) => void;
   component?: string;
 }
-
-const routeSet: ItemLink[] = [
-  {
-    icon: 'fas fa-home',
-    label: 'Home',
-    to: '/',
-    component: 'index',
-  },
-];
-
-export default routeSet;

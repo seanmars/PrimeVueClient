@@ -1,16 +1,22 @@
-import { fileURLToPath, URL } from 'node:url';
+import { fileURLToPath, URL } from 'url';
 
 import { defineConfig } from 'vite';
+import vue from '@vitejs/plugin-vue';
 import AutoImport from 'unplugin-auto-import/vite';
-import Layouts from 'vite-plugin-vue-layouts';
 import Components from 'unplugin-vue-components/vite';
-import Vue from '@vitejs/plugin-vue';
+import Layouts from 'vite-plugin-vue-layouts';
 import VueRouter from 'unplugin-vue-router/vite';
 import { PrimeVueResolver } from '@primevue/auto-import-resolver';
 
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
+    vue(),
+    Components({
+      resolvers: [
+        PrimeVueResolver()
+      ],
+    }),
     VueRouter({
       dts: 'src/typed-router.d.ts',
     }),
@@ -24,12 +30,6 @@ export default defineConfig({
       ],
       vueTemplate: true,
     }),
-    Components({
-      resolvers: [
-        PrimeVueResolver()
-      ]
-    }),
-    Vue(),
   ],
   define: { 'process.env': {} },
   resolve: {

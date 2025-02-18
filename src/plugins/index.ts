@@ -16,6 +16,8 @@ import type { App } from 'vue';
 
 export function registerPlugins(app: App) {
   app
+    .use(pinia)
+    .use(router)
     .use(PrimeVue, {
       theme: {
         preset: Aura,
@@ -23,7 +25,5 @@ export function registerPlugins(app: App) {
           darkModeSelector: '.app-dark'
         }
       }
-    })
-    .use(router)
-    .use(pinia);
+    });
 }

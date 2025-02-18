@@ -1,6 +1,10 @@
-# Vue 3 + TypeScript + Vite + PrimeVue
+# Frontend Base
 
-- [Vite](https://vite.dev)
-- [PrimeVue](https://primevue.org)
-- [Vue.js](https://vuejs.org)
-- [TypeScript](https://www.typescriptlang.org)
+- Vite
+- TypeScript
+- Vue 3
+- Tailwind CSS
+- PrimeVue
+- Pinia
+- Vue Router
+- Auto import components

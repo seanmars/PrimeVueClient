@@ -74,3 +74,7 @@ function isOutsideClicked(event: any) {
   );
 }
 </script>
+
+<style scoped>
+
+</style>

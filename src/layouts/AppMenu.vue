@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
-import type { ItemLink } from '@/router/routeSet';
+import type { ItemLink } from '@/types/ItemLink.ts';
 import AppMenuItem from '@/layouts/AppMenuItem.vue';
 
 const model = ref<ItemLink[]>([

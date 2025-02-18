@@ -9,13 +9,18 @@ import { createRouter, createWebHistory, type RouteRecordRaw } from 'vue-router'
 import { setupLayouts } from 'virtual:generated-layouts';
 
 // Routes
-import routeSet from './routeSet';
 
 // Setup routes
 const routes: RouteRecordRaw[] = [
   {
     path: '/',
-    component: import('@/pages/index.vue'),
+    component: import('@/layouts/AppLayout.vue'),
+    children: [
+      {
+        path: '/',
+        component: import('@/pages/Main.vue'),
+      }
+    ],
   }
 ];
 

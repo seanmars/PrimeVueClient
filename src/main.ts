@@ -2,7 +2,8 @@ import App from './App.vue';
 import { createApp } from 'vue';
 import { registerPlugins } from '@/plugins';
 
-import '@/assets/styless.scss';
+import '@/assets/styles.scss';
+import '@/assets/tailwind.css';
 
 const app = createApp(App);
 
